@@ -2,15 +2,11 @@ ignition:
   version: 3.2.0
 storage:
   files:
-    - path: /etc/motd
+    - path: /etc/simple-test
       overwrite: true
       contents:
-        inline: "Hello from Ignition!"
+        inline: "It worked!"
       mode: 0644
-      user:
-        name: core
-      group:
-        name: core
 passwd:
   users:
     - name: core
