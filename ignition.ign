@@ -1,0 +1,18 @@
+ignition:
+  version: 3.2.0
+storage:
+  files:
+    - path: /etc/motd
+      overwrite: true
+      contents:
+        inline: "Hello from Ignition!"
+      mode: 0644
+      user:
+        name: core
+      group:
+        name: core
+passwd:
+  users:
+    - name: core
+      ssh_authorized_keys:
+        - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICjAeZA0gx8Wqyijmo6pz1oVJJERzdUzXP/76ppWCeG/ swords-halil-2024"
